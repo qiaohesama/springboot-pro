@@ -4,6 +4,8 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 /**
  * @author qiaoh
  */
@@ -24,7 +26,7 @@ public class AsyncServiceImpl {
 
     @Scheduled(cron = "* * * * * 1-7")
     public void scheduling() {
-
+        System.out.println(UUID.randomUUID().toString().replace("-", ""));
         System.out.println("hello world" + i);
         i++;
     }
