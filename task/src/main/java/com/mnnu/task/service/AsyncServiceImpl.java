@@ -28,6 +28,7 @@ public class AsyncServiceImpl {
     public void scheduling() {
         System.out.println(UUID.randomUUID().toString().replace("-", ""));
         System.out.println("hello world" + i);
+        System.out.println("zhangsan lisi wangwu");
         i++;
     }
 }
